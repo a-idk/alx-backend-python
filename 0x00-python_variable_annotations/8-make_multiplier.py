@@ -10,4 +10,4 @@ def make_multiplier(multiplier: float) -> Callable[[float], float]:
     """
     function that takes a float argument & returns a fxn multiplied by a float
     """
-    return lamda x: x * multiplier
+    return lambda x: x * multiplier
