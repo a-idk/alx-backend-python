@@ -3,12 +3,12 @@
 Title: Duck typing - first element of a sequence
 Author: @a_Idk
 """
-from typing import List, Tuple, Union
+from typing import List, Tuple, Any
 
 
-def zoom_array(lst: Union[List, Tuple], factor: int = 2) -> List:
+def zoom_array(lst: List[Any], factor: int = 2) -> List[Any]:
     """ fxn that zooms array """
-    zoomed_in: List = [
+    zoomed_in: List[Any] = [
             item for item in lst
             for i in range(factor)
     ]
